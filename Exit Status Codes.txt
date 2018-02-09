@@ -1,0 +1,28 @@
+Every command that runs has an exit status.
+
+That check is looking at the exit status of the command that finished most recently before that line runs.
+
+How to check the exit status code
+When a command finishes execution, it returns an exit code. The exit code is not displayed on the screen by default. To examine the exit code, you need to examine a special variable, "$?"
+
+Say, you are searching for a string in a text file.
+
+$ grep x1y2z3 somefile.txt
+$
+The standard output of the command returns null, which is a pretty good indication that the string cannot be found in the file.
+
+But what if you embed the grep command in a script? How can you tell if the string is found or not?
+
+Checking the exit code will tell you. Let's first try it out interactively.
+
+$ grep x1y2z3 somefile.txt
+$ echo $?
+1
+Note that in bash, the exit status is 0 if the command succeeded, and 1 if failed. For grep, 0 means that the string was found, and 1 (or higher), otherwise.
+
+To check the exit status in a script, you may use the following pattern:
+
+somecommand  argument1 argument2
+RETVAL=$?
+[ $RETVAL -eq 0 ] && echo Success
+[ $RETVAL -ne 0 ] && echo Failure

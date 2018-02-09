@@ -1,0 +1,8 @@
+Spring MVC Tutorial
+https://github.com/in28minutes/SpringMVCStepByStep
+
+Cdoe Location - D:\Development\SpringMVC
+In eclipse - /in28Minutes-springmvc - To run, Run As -> Maven Build  - SpringMVC New
+Open in the browser - http://localhost:8080/spring-mvc/login
+
+

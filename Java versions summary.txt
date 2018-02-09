@@ -1,0 +1,88 @@
+Java Version-wise Features History
+
+What are new java features in java version 7 or 8? These are pretty much frequently asked questions in java interviews. In this page, I listing down all JDK changes from JDK 1.x to Java SE 8, sequentially. Though I have tried to cover as much as information I can gather, though if you know something which I missed below, please let me know and I will add that information.
+
+Java SE 9 Features
+
+Possible Release Date : September 21, 2017. Please see the updated release info here.
+
+Proposed features are:
+
+Support for multi-gigabyte heaps
+Better native code integration
+Self-tuning JVM
+Java Module System
+Money and Currency API
+jshell: The Java Shell
+Automatic parallelization
+Java SE 8 Features
+
+Release Date : March 18, 2014
+
+Code name culture dropped. Included features were:
+
+Lambda expression support in APIs
+Functional interface and default methods
+Optionals
+Nashorn – JavaScript runtime which allows developers to embed JavaScript code within applications
+Annotation on Java Types
+Unsigned Integer Arithmetic
+Repeating annotations
+New Date and Time API
+Statically-linked JNI libraries
+Launch JavaFX applications from jar files
+Remove the permanent generation from GC
+Java SE 7 Features
+
+Release Date : July 28, 2011
+
+This release was called “Dolphin”. Included features were:
+
+JVM support for dynamic languages
+Compressed 64-bit pointers
+Strings in switch
+Automatic resource management in try-statement
+The diamond operator
+Simplified varargs method declaration
+Binary integer literals
+Underscores in numeric literals
+Improved exception handling
+ForkJoin Framework
+NIO 2.0 having support for multiple file systems, file metadata and symbolic links
+WatchService
+Timsort is used to sort collections and arrays of objects instead of merge sort
+APIs for the graphics features
+Support for new network protocols, including SCTP and Sockets Direct Protocol
+
+
+Java SE 6 Features
+
+Release Date : December 11, 2006
+
+This release was called “Mustang”. Sun dropped the “.0” from the version number and version became Java SE 6. Included features were:
+
+Scripting Language Support
+Performance improvements
+JAX-WS
+JDBC 4.0
+Java Compiler API
+JAXB 2.0 and StAX parser
+Pluggable annotations
+New GC algorithms
+J2SE 5.0 Features
+
+Release Date : September 30, 2004
+
+This release was called “Tiger”. Most of the features, which are asked in java interviews, were added in this release.
+
+Version was also called 5.0 rather than 1.5. Included features are listed down below:
+
+Generics
+Annotations
+Autoboxing/unboxing
+Enumerations
+Varargs
+Enhanced for each loop
+Static imports
+New concurrency utilities in java.util.concurrent
+Scanner class for parsing data from various input streams and buffers.

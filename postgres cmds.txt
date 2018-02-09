@@ -1,0 +1,25 @@
+To create a dump -
+pg_dump -h localhost -p 5432 -U postgres -d mydb  > backup.sql
+
+To login - 
+sudo -i -u postgres
+
+psql -h localhost -p 5432 -U postgres -d _vpa < vpa1.sql
+
+To login with specific db - 
+psql -h localhost -p 5432 -U postgress testdb
+
+
+Path to pg_hba.conf -  /var/lib/pgsql/9.1/data
+1 more imp link - https://askubuntu.com/questions/256534/how-do-i-find-the-path-to-pg-hba-conf-from-the-shell
+
+
+https://stackoverflow.com/questions/2942485/psql-fatal-ident-authentication-failed-for-user-postgres
+
+To list all databases - 
+\l = 
+
+\c db_name - for db selection
+To check all tables -
+select * from pg_catalog.pg_tables
+where schemaname != 'information_schema' and schemaname != 'pg_catalog';

@@ -1,0 +1,11 @@
+package com.in28minutes.springboot;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class WelcomeService {
+	public String getWelcomeMsg(){
+		//In reality some complex logic
+		return "Hello Spring Boot With Spring Dependency!";
+	}
+}

@@ -1,0 +1,85 @@
+https://www.github.com/in28minutes/SpringBootForBeginners
+
+POM - Project Object Model
+
+@SpringBootApplication - a class with this annotation works as the spring boot app launcher - if we dont give this - 
+Exception -
+org.springframework.context.ApplicationContextException: Unable to start embedded container; nested exception is org.springframework.context.ApplicationContextException: Unable to start EmbeddedWebApplicationContext due to missing EmbeddedServletContainerFactory bean.
+OR 
+We can use these 2 together -> ComponentScan and EnableAutoConfiguration OR @SpringBootApplication alone
+
+SpringApplication -> Classes that can be used to bootstrap and launch a Spring application from a Java main method. Provides an ApplicationContext instance.
+Has method run() that accepts 2 params - the ClassName.class (or array of such objects) and optional args (or array of such args) 
+E.g. ApplicationContext ctx = SpringApplication.run(Application.class, args);
+
+What if Spring does not find what it is looking for ?
+Throws exception and server won't start -
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'welcomeController': Unsatisfied dependency expressed through field 'service': No qualifying bean of type [com.in28minutes.springboot.WelcomeService] found for dependency [com.in28minutes.springboot.WelcomeService]: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.in28minutes.springboot.WelcomeService] found for dependency [com.in28minutes.springboot.WelcomeService]: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+
+How does Spring framework know where to search for beans to manage? - With @ComponentScan
+If the bean with annotated with @Component or @Bean is not present in same package as controller (where we are trying to autowire it with @Autowired); we will still get above exception. For that we must add @ComponentScan("com.in28minutes") that contains this service.
+@ComponentScan - specifies the package(s) where the Autowired dependencies to be looked for (these dependencies should be marked with @Components/ @Service) - If not found, throws NoSuchBeanDefinitionException
+If not defined, by default autowired dependencies are looked within the same package as the askign class.
+
+What are the annotations that Spring looks for? 
+- @Component, @Service, @Controller, @Repository
+@RestController is also looked by it - but it's extension of Controller
+
+@RestController => 
+The @RestController is controller is different from the traditional @Controller in a sense that it returns a Data object instead of View object. It is automatically converted to json using spring framework.
+
+
+##spring-boot-starter-web - Starter for building web, including RESTful applications using Spring
+		MVC. Uses Tomcat as the default embedded container
+		
+Spring Boot Starter Web brings all dependencies needed to build normal and RESTful web applications. Look at the dependency tree.
+All the dependencies are added in because of spring-boot-starter-web
+Also look at /META-INF/spring.provides inside the spring-boot-starter-web.jar
+Spring Boot Starter Web auto configures things needed to startup a web application. Look at the log
+Mapping servlet: 'dispatcherServlet' to [/]
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Look at package org.springframework.boot.autoconfigure.web in spring-boot-autoconfigure-*.jar
+Go to url http://localhost:8080/some-non-existing-url
+
+AutoConfiguration - spring-boot-autoconfigure-1.4.0.RELEASE,jar =>
+We need not add dispatcherServlet as we used to do in spring OR default Whitelabel Error Page which we do not configure.
+Spring boot looks at framework(s) that you have on classpath and brings in lots of default dependencies like AOP, Hibernate Validator, Logging, Tomcat, webjars etc.
+Some of the examples - 
+2017-09-20 18:08:29.184  INFO 11124 --- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-09-20 18:08:29.191  INFO 11124 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-09-20 18:08:29.191  INFO 11124 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-09-20 18:08:29.192  INFO 11124 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-09-20 18:08:29.192  INFO 11124 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-09-20 18:08:29.590  INFO 11124 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3e92efc3: startup date [Wed Sep 20 18:08:26 IST 2017]; root of context hierarchy
+2017-09-20 18:08:29.680  INFO 11124 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/welcome]}" onto public java.lang.String com.in28minutes.springboot.WelcomeController.welcome()
+2017-09-20 18:08:29.685  INFO 11124 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-09-20 18:08:29.686  INFO 11124 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-09-20 18:08:29.725  INFO 11124 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-20 18:08:29.725  INFO 11124 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-20 18:08:29.764  INFO 11124 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+
+
+References
+
+1 hour video courses on all popular frameworks!
+
+Spring - spring-framework-tutorial-for-beginners
+Spring MVC - https://www.youtube.com/watch?v=BjNhGaZDr0Y
+Spring Boot - https://www.youtube.com/watch?v=PSP1-2cN7vM
+Eclipse - https://www.youtube.com/watch?v=s4ShbtOHMCA
+Maven - https://www.youtube.com/watch?v=0CFWeVgzsqY
+JUnit - https://www.youtube.com/watch?v=o5k9NOR9lrI
+Mockito - https://www.youtube.com/watch?v=d2KwvXQgQx4
+
+
+
+ 
+ 
+
+
+
+
+
+
+

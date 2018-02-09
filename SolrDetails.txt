@@ -1,0 +1,62 @@
+Solr Details on local - 
+youtube video - https://www.youtube.com/watch?v=v28FJswU1DQ
+
+Extracted dir - D:\softwares\solr-7.0.1
+To start - Go to cmd prompt - location D:\softwares\solr-7.0.1\bin
+Run - solr start 
+OR solr start -p 8983 (default port is 8983; you can change)
+
+Solr home dir - D:\softwares\solr-7.0.1\server\solr - as mentioned in youtube video above
+It will create separate dirs for each core you create.
+
+To know how to index - refer this short video (6 mins) - https://www.youtube.com/watch?v=rxoS1p1TaFY&pbjreload=10
+To create new core - Run below command -
+D:\softwares\solr-7.0.1\bin>solr create -c dance
+Response - 
+WARNING: Using _default configset. Data driven schema functionality is enabled by default, which is
+         NOT RECOMMENDED for production use.
+         To turn it off:
+            curl http://localhost:8983/solr/dance/config -d '{"set-user-property": {"update.autoCreateFields":"false"}}'
+
+Copying configuration to new core instance directory:
+D:\softwares\solr-7.0.1\server\solr\dance
+
+Creating new core 'dance' using command:
+http://localhost:8983/solr/admin/cores?action=CREATE&name=dance&instanceDir=dance
+
+{
+  "responseHeader":{
+    "status":0,
+    "QTime":801},
+  "core":"dance"}
+
+To index all XML files in exampledocs directory inside direcotrs core - 
+D:\softwares\solr-7.0.1\example\exampledocs>java -Dc=directors -jar post.jar *.xml
+Response - 
+SimplePostTool version 5.0.0
+Posting files to [base] url http://localhost:8983/solr/dance/update using content-type application/xml...
+POSTing file gb18030-example.xml to [base]
+POSTing file hd.xml to [base]
+POSTing file ipod_other.xml to [base]
+POSTing file ipod_video.xml to [base]
+POSTing file manufacturers.xml to [base]
+POSTing file mem.xml to [base]
+POSTing file money.xml to [base]
+POSTing file monitor.xml to [base]
+POSTing file monitor2.xml to [base]
+POSTing file mp500.xml to [base]
+POSTing file sd500.xml to [base]
+POSTing file solr.xml to [base]
+POSTing file utf8-example.xml to [base]
+POSTing file vidcard.xml to [base]
+14 files indexed.
+COMMITting Solr index changes to http://localhost:8983/solr/dance/update...
+Time spent: 0:00:02.330
+
+You can again go back to solr admin console on http://localhost:8983/solr/#/dance/query (dance is a core, it can be any other core too) and check via Execute Query. Try filter query(fq) or filter list (fl) options.
+E.g. in fq -> cat:hard drive and fl -> cat,price
+
+
+
+
+

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete 7 elements from project &apos;first-springboot-project&apos;&#x0D;&#x0A;- Original project: &apos;first-springboot-project&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     first-springboot-project&#x0D;&#x0A;     generated-sources&#x0D;&#x0A;     m2e-wtp&#x0D;&#x0A;     maven-archiver&#x0D;&#x0A;     maven-status&#x0D;&#x0A;     first-springboot-project.war&#x0D;&#x0A;     first-springboot-project.war.original" description="Delete elements" element1="target/generated-sources" element2="target/m2e-wtp" element3="target/first-springboot-project" element4="target/first-springboot-project.war.original" element5="target/maven-archiver" element6="target/maven-status" element7="target/first-springboot-project.war" elements="0" flags="589830" id="org.eclipse.jdt.ui.delete" resources="7" stamp="1517997546751" subPackages="false" version="1.0"/>
+</session>

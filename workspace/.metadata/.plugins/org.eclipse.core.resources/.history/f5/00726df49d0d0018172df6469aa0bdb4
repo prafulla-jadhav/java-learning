@@ -1,0 +1,3 @@
+logging.level.org.springframework:INFO
+//TRACE, DEBUG, WARN, ERROR
+//logging.level for org.springframewok only to be logged in INFO level

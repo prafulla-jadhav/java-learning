@@ -1,0 +1,21 @@
+package com.in28minutes.springboot;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.ComponentScan;
+
+
+//@ComponentScan("com.in28minutes") // - needed when the @Component marked dependencies/ beans are outside this package
+//@EnableAutoConfiguration -> we can use these 2 together (ComponentScan and EnableAutoConfiguration) OR @SpringBootApplication 
+//OR
+@SpringBootApplication
+public class Application {
+
+	public static void main(String[] args) {
+		ApplicationContext ctx = SpringApplication.run(Application.class, args);
+
+	}
+
+}

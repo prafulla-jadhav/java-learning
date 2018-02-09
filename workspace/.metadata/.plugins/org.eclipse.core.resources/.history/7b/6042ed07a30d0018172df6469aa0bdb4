@@ -1,0 +1,6 @@
+//logging.level.org.springframework: INFO
+logging.level.org.springframework: DEBUG
+// DEBUG mode prints all AUTO-CONFIGURATION REPORT - including Positive matches - that were required looking at classpath 
+//and Negative matches -  not required now
+//TRACE, DEBUG, LOG, WARN, ERROR -> In decreasing order of log generation
+//logging.level for org.springframewok only to be logged in INFO level

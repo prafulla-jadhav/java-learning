@@ -1,0 +1,128 @@
+https://www.altoros.com/blog/2016-in-review-a-varietal-cloud-and-the-paas-revival/
+It's been a wild, historical year, so let's recall Top 10 Issues in Enterprise IT for 2016.
+“Varietal” cloud
+Within the context of cloud computing, the so-called hybrid cloud is intuitively the safe way to proceed. It doesn’t mean pushing all your chips to the center of the table on one bet, yet it recognizes the need to at least test the features, cost, and reliability of AWS, Microsoft Azure, Google Cloud, or some of the others hanging in there in the public-cloud market.
+
+The survey asked 1,060 IT professionals about their adoption of cloud infrastructure and related technologies. 42% of the respondents represented enterprises with more than 1,000 employees. 
+
+Going all-in with public cloud -
+Netflix heads the list of enterprises going all-in with public cloud, and Netflix is one of the largest users of bandwidth in the world. Other examples include Expedia, Pinterest, and The Guardian
+
+Warner Music Group, which found too many performance issues with a private approach and went all-in with AWS. An irony with this deployment is its use of Cloud Foundry as a platform—a technology that was originally designed for private, not public, cloud.
+
+Let’s call it a “varietal cloud” -
+I prefer the term “varietal” over “hybrid,” as I think it better describes the tremendous diversity we will see with cloud deployments in coming years. Today’s debate still seems stuck on a blunt, “either or” decision of whether to go hybrid or not.
+
+
+Cloud Foundry Benefits -
+1. What is Immutable Infrastructure
+Immutable infrastructure is comprised of immutable components that are replaced for every deployment, rather than being updated in-place. Those components are started from a common image that is built once per deployment and can be tested and validated. The common image can be built through automation, but doesn’t have to be. Immutability is independent of any tool or workflow for building the images.
+Its best use case is in a cloud or virtualized environment. While it is possible in non-virtualized environments, the benefit doesn’t outweigh the effort.
+2. Blue-green deployments - to eliminate downtime
+
+
+
+AWS -
+Amazon Web Services (AWS) is a secure cloud services platform, offering compute power, database storage, content delivery and other functionality to help businesses scale and grow.
+
+Amazon EC2 - 
+Amazon EC2 is integrated with most AWS services such as Amazon Simple Storage Service (Amazon S3), Amazon Relational Database Service (Amazon RDS), and Amazon Virtual Private Cloud (Amazon VPC) to provide a complete, secure solution for computing, query processing, and cloud storage across a wide range of applications.
+
+PaaS is not dead - 
+PaaS was, in fact, in an evolving state at the time, handling services so smoothly it seemed to disappear on the one hand, while handling the new-ish container deployments on the other. 
+Meanwhile, Cloud Foundry continued to develop. Its new Diego 1.0 implementation, which simplifies much of the previous version’s complexity, was cranked up to 250,000 simultaneous containers in testing and was formally released in November.
+Cloud Foundry Foundation reported continued strong growth throughout the year, adding TIBCO Software, Armukani, and Fidelity Investments as new members.
+
+
+
+Cloud Foundry Members - important - members work together to drive global awareness, adoption and development of Cloud Foundry.
+Backed by industry leaders in IT and a spectrum of end user organizations, Cloud Foundry is the world’s leading open source platform for cloud applications. See our member roster below and read member profiles. Learn more about the benefits of Cloud Foundry membership.
+Cognizant is one of the Gold members along with Google, Microsoft, Accenture, Capgemini etc (total 15).
+Platinum - IBM, Pivotal, SUSE, vmWare, SAP etc (total 7)
+
+41 silver members - Honeywell etc
+
+
+https://www.altoros.com/blog/cloud-foundry-cab-december-2016-open-service-broker-api-and-diego-1-0-oss-cf/
+The Cloud Foundry and Kubernetes communities and Red Hat partner to deliver the Open Service Broker API, enabling service interoperability between the platforms. In other CAB news, Diego 1.0 is official and CF-Extensions are born.
+
+The future may be serverless, but for now, commoditized infrastructure is making platform-as-a-service increasingly attractive for startups, enterprises and developer shops. Led by Amazon and Microsoft, vendors such as Salesforce, Google and Oracle are pitching platforms for every development style, architecture, language and use case. And cloud-native programming is even attractive on-premises.
+
+http://sdtimes.com/three-cloud-paas-trends-watch-serverless-world/
+Pivotal Cloud Foundry goes the whole way from embedded operating systems — so you don’t have to buy anything from Red Hat ever again, to cloud orchestration — so you don’t need Puppet and Chef, to middleware — so you don’t need IBM WebSphere or Oracle WebLogic, to load balancing and some API services, all the way up to cloud-native frameworks such as Spring Boot, which is the most popular Java framework for cloud apps in the world,” according to James Watters, senior vice president of product at Pivotal, in a January 2017.
+
+https://12factor.net/ - importatnt - nextgen design patterns - modern era software development methodology -
+In the modern era, software is commonly delivered as a service: called web apps, or software-as-a-service. The twelve-factor app is a methodology for building software-as-a-service apps that:
+
+Use declarative formats for setup automation, to minimize time and cost for new developers joining the project;
+Have a clean contract with the underlying operating system, offering maximum portability between execution environments;
+Are suitable for deployment on modern cloud platforms, obviating the need for servers and systems administration;
+Minimize divergence between development and production, enabling continuous deployment for maximum agility;
+And can scale up without significant changes to tooling, architecture, or development practices.
+
+Format is inspired by Martin Fowler’s books Patterns of Enterprise Application Architecture and Refactoring.
+The Twelve Factors - 
+I. Codebase
+One codebase tracked in revision control, many deploys
+II. Dependencies
+Explicitly declare and isolate dependencies
+III. Config
+Store config in the environment
+IV. Backing services
+Treat backing services as attached resources
+V. Build, release, run
+Strictly separate build and run stages
+VI. Processes
+Execute the app as one or more stateless processes
+VII. Port binding
+Export services via port binding
+VIII. Concurrency
+Scale out via the process model
+IX. Disposability
+Maximize robustness with fast startup and graceful shutdown
+X. Dev/prod parity
+Keep development, staging, and production as similar as possible
+XI. Logs
+Treat logs as event streams
+XII. Admin processes
+Run admin/management tasks as one-off processes
+
+"The cloud has made delivering software easier but has opened up a huge attack surface. We use AWS serverlessly to protect AWS,” said Matt Fuller, founder of CloudSploit. ven the most secure cloud providers only offers security of the cloud. The user is responsible for security in the cloud.
+
+https://www.cloudfoundry.org/blog/
+Honda Drives a Connected Car Experience with IBM Bluemix
+Ford connected cars system is using PCF.
+Silent film tells the story of two developers — one who uses Cloud Foundry and one who doesn’t.
+https://youtu.be/em-W0rVbCLc
+
+
+Subscribed to - 
+MIT Technology Review <events@technologyreview.com>
+Recent - 
+How do you teach a drone to crash safely?
+Google’s AI guru says that great artificial intelligence must build on neuroscience. - Demis Hassabis, the founder of Google’s AI division, DeepMind says -> software must acquire human traits like inquisitiveness and imagination
+50 Smartest Companies 2017 - see list in 50 smartest companies.txt
+
+https://cloudacademy.com/ - For cloud related developments across globe
+
+https://www.softwebsolutions.com
+
+
+Current gamification platforms - 
+1. Preferred Patron™ - loyalty points platform  
+2. Influitive - Great way to engage and activate customers - advocate marketing services
+3. US army recrutment, treehouse, mint.com, jillian michaels, samsung nation, the world bank - "Evoke" to solve world's biggest problems
+
+
+
+
+GITHUB Creds - 
+https://github.com/
+prafulla-jadhav/ Welcome2github
+Email - otherstuff237@gmail.com
+
+
+
+
+
+

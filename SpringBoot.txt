@@ -1,0 +1,6 @@
+https://www.youtube.com/watch?v=-r_tyRVGIN8 - Spring Boot with DB - CrudRepository and Oracle DB
+
+https://docs.spring.io/spring-boot/docs/current/reference/html/
+
+https://www.youtube.com/watch?v=PSP1-2cN7vM&list=PLBBog2r6uMCRzaJqr-uUC8gakwSxkPSBh&pbjreload=10
+

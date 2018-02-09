@@ -1,0 +1,166 @@
+AC Issues -  v net 202610 & shift mob:- 9881074348.
+
+Abhijeet - 518152
+
+INC000019102916 - avecto issue - reopened
+
+prafulljadhav237@gmail.com/ Welcome2cybage#
+
+db.users.find({"user_id":"bala.gto1"}).pretty();
+
+Webex username /pwd-
+prafulla.jadhav@cognizant.com/ P@55word-1
+
+QMS - traffic signal project (SmartLights.zip)
+https://github.com/ranjeetrr
+
+
+AIBot Widget local path -
+C:\Users\585728\st_gui_server_sprint7\AIBotWidgetProject
+
+
+monsanto - client name
+
+CTS login pwd changed -
+585728/ a***da****s1**90*
+on 26-7-2017
+changed on - 
+585728/ a***da****s1****@
+on
+
+To send email from cmd line - FB demo pilot box - emailutils installed -
+echo "this is a test mail" | mail -s "Subject of mail" prafull.jadhav.17490@gmail.com
+
+For FM Pilot box (Akanksha ) - 
+root@ip-172-31-14-187:/home/ubuntu# mysql -u bmlabs -proot
+
+Stored passwords -
+/etc/apt/apt.conf and /etc/bash.bashrc
+
+https://demo4.playvox.com 
+ID: raghunathan.narayanaswami@cognizant.com
+passwd: cognizant-demo
+
+
+
+169.54.245.68 - ibm bluemix
+52.22.149.249 - pivotal
+
+In 
+4698 rows in set (0.01 sec)
+
+
+Use cmd - passwd
+to change password on unix boxes (LW boxes)
+User t-engage pwd reset to - 
+blue@2017 on 26-7-2017
+
+TPIN - 8111
+
+For installations -
+ <PhoenixITAMTeamPUN@cognizant.com> 
+
+
+Gobinda Conf id - 591 879 275#   
+
+Anand's Webex -
+https://cognizantcorp.webex.com/meet/Anand.Kumar4 
+Meeting Code : 594 649 361
+
+Gireesh - 
+https://cognizantcorp.webex.com/meet/gireesh.govindan 
+Dial in - UK  800-096-6672           US : 844-666-8111      VNET: 810111   PassCode: 591 879 275# 
+
+
+
+
+Timesheet queries - 56666 - 2 4 1
+Leave policy and HR queries - 56666 - 8 2
+Link - Leave cancellation
+https://compass.talent.cognizant.com/psp/HCMPRD/EMPLOYEE/HRMS/c/CT_ROLE_EMPLOYEE.CT_ABS_CNCL_ESS.GBL?Page=CT_ABS_CNCL_REQSS&Action=U&TargetFrameName=None
+
+HR - HCM compass site - for leaves etc -
+https://compass.talent.cognizant.com
+
+https://passbook.epfindia.gov.in/MemberPassBook/Login.jsp
+
+Leave cancelaation GSD - INC000020226533
+
+
+mvn clean install -DskipTests
+
+EC2 windows machine -
+ec2-54-177-33-28.us-west-1.compute.amazonaws.com/ win@20179
+
+GIthub credentials -  new
+prafull-jadhav-17490 OR prafull.jadhav.17490@gmail.com/ welcome2github - works fine
+
+old one -
+prafulla-jadhav OR otherstuff237@gmail.com/ welcome2github - works fine as well
+
+Bitbucket creds -
+https://bitbucket.org
+pratikmn4118@gmail.com/ pratik1234
+
+PHP - 
+/srv/nginx/cec_baseline/platform/Bootstrap.php
+/etc/php5/fpm/php.ini
+/var/lib/php5
+
+otherstuff237@gmail.com/ P@55word-1
+
+Sample referral link - Resume with Job Ids -
+https://tas-cognizant.taleo.net/careersection/indapac_itbpo_referral_career/jobdetail.ftl
+
+
+Safari for windows -
+Ctrl +  Alt + I 
+
+507735
+
+
+TOGAF pluralsight information -
+https://app.pluralsight.com/player?course=togaf-9-1-enterprise-architecture-framework-overview&author=joseph-anthony&name=togaf-9-1-enterprise-architecture-framework-overview-m1&clip=0&mode=live
+
+SpringBoot : How to integrate a Filter in Spring Boot Application
+https://www.tuturself.com/posts/view?menuId=3&postId=1141
+
+Remote amazon windows m/c ->
+ec2-54-177-33-28.us-west-1.compute.amazonaws.com/
+win@2018j
+
+
+
+join.me/
+prafullaj
+
+bala.gto1@gmail.com/ P@55word-1
+
+
+
+Run these 2 cmds - when you get error connecting to  CF using =>  cf login -a https://api.run.pivotal.io and https://api.ng.bluemix.net
+
+Go to cmd prompt -
+set http_proxy=http://proxy.cognizant.com:6050
+set https_proxy=https://proxy.cognizant.com:6050
+
+CF logins - 
+cf login -a https://api.run.pivotal.io
+prafull.jadhav.17490@gmail.com/ Welcome2cloud#
+
+To connect to remote mysql - 
+mysql -u b4be890c37d421 -p5264bb9f -h us-cdbr-iron-east-03.cleardb.net 3306
+OR
+ mysql -u b4be890c37d421 -p5264bb9f -h us-cdbr-iron-east-03.cleardb.net -P3306
+
+1000171811 - HealthActivate venture - Project ID
+
+For HealthCare Internal doc updates -
+https://onecognizant.cognizant.com/?GlobalAppId=2190&Source=1
+
+Path variable in env variables - as of 10-10-2017 - 
+C:\ProgramData\Oracle\Java\javapath;%SystemRoot%\system32;%SystemRoot%;%SystemRoot%\System32\Wbem;%SYSTEMROOT%\System32\WindowsPowerShell\v1.0\;C:\Program Files\nodejs\;%M2%;%GRADLE_HOME%/bin;%JAVA_HOME%/bin;C:\Program Files\Cloud Foundry;C:\Program Files (x86)\WinMerge;%SPRING_HOME%/bin
+
+
+
+

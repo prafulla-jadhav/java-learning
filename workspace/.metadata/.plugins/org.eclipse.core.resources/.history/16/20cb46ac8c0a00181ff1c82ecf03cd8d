@@ -1,0 +1,19 @@
+package com.journaldev.java;
+
+import java.io.IOException;
+
+public class TestMe {
+	public static void main(String[] args) {
+		System.out.println("Me");
+	}
+	class Animal {
+		 void eat() throws IOException {
+			System.out.println("Animal");
+		}
+	}
+	class Dog extends Animal {
+		public void  eat() throws FileNotFoundException {
+			System.out.println("Dog");
+		}
+	}
+}
